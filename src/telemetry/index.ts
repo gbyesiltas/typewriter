@@ -3,7 +3,8 @@ import { Config } from "@oclif/core";
 import { Analytics } from "@segment/analytics-node";
 import { machineIdSync } from "node-machine-id";
 import { TokenMethod, WorkspaceConfig } from "../config";
-import typewriterClient, {
+import * as typewriterClient from "./segment";
+import {
   Callback,
   CommandBuildConfig,
   CommandInitConfig,

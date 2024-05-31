@@ -1,5 +1,5 @@
 import { Analytics } from "@segment/analytics-node";
-import typewriter from "../build/typescript-analytics-node";
+import * as typewriter from "../build/typescript-analytics-node";
 
 () => {
   // assert expects a node analytics instance
