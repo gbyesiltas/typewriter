@@ -74,7 +74,7 @@ export const javascript: Generator<
 
 		return {
 			isBrowser: options.client.sdk === SDK.WEB,
-			useProxy: true,
+			useProxy: false,
 		}
 	},
 	generatePrimitive: async (client, schema) => {
