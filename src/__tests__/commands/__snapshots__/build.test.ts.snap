@@ -13282,7 +13282,7 @@ export const AnalyticsProvider = ({
     return <Context.Provider value={client}>{children}</Context.Provider>;
 };
 
-export const useAnalytics: TypewriterSegmentClient | {} = () => {
+export const useAnalytics = (): TypewriterSegmentClient | {} => {
     const client = useContext(Context);
     if (!client) {
         console.error(
